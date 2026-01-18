@@ -1,0 +1,35 @@
+/* src/components/ProductList.css */
+
+.container {
+  max-width: 1200px; /* Giới hạn chiều rộng web cho đẹp */
+  margin: 0 auto;    /* Căn giữa trang web */
+  padding: 20px;
+}
+
+/* --- 1. Cấu hình Mặc định (Desktop) --- */
+.product-grid {
+  display: grid;
+  
+  /* Cú pháp thần thánh: Chia 3 cột đều nhau */
+  /* 1fr = 1 fraction (1 phần bằng nhau) */
+  grid-template-columns: repeat(3, 1fr); 
+  
+  gap: 20px; /* Khoảng cách giữa các ô */
+}
+
+/* --- 2. Cấu hình cho Tablet (Màn hình nhỏ hơn 1024px) --- */
+/* Media Query: "Nếu màn hình nhỏ hơn 1024px thì áp dụng code bên trong" */
+@media (max-width: 1024px) {
+  .product-grid {
+    /* Đổi thành 2 cột */
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* --- 3. Cấu hình cho Mobile (Màn hình nhỏ hơn 600px) --- */
+@media (max-width: 600px) {
+  .product-grid {
+    /* Đổi thành 1 cột duy nhất */
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
