@@ -1,0 +1,23 @@
+.product-card{
+    width: 250px;             /* Chiều rộng cố định */
+    border: 1px solid #ddd;   /* Viền mỏng màu xám */
+    border-radius: 15px;      /* Yêu cầu: Bo góc */
+    padding: 15px;            /* Khoảng cách bên trong */
+    text-align: center;       /* Canh giữa nội dung */
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    transition: transform 0.3s, box-shadow 0.3s;
+    
+    background-color: white;
+    
+}
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+#imge{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
