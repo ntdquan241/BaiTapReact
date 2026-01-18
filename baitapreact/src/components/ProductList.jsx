@@ -1,5 +1,5 @@
 // src/components/ProductList.jsx
-import ProDuctCard from './components/ProDuctCard'; // Tận dụng lại card ở bài cũ
+import ProDuctCard from './ProDuctCard'; // Tận dụng lại card ở bài cũ
 import './ProductList.css'; // File CSS sắp tạo
 
 function ProductList() {

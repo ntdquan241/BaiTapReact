@@ -6,7 +6,7 @@ import ProDuct from './components/ProDuctCard.jsx'
 import Button from './components/Button.jsx'
 import Alert from './components/Alert.jsx'
 import LoginForm from './components/LoginForm.jsx'
-import ProductList from './ProDuctList.jsx'
+import ProductList from './components/ProductList.jsx'
 function App() {
   const [count, setCount] = useState(0)
   const [showAlert, setShowAlert] = useState("success");
