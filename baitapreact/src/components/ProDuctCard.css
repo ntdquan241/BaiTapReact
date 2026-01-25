@@ -1,10 +1,9 @@
 .product-card{
-    width: 250px;             /* Chiều rộng cố định */
-    border: 1px solid #ddd;   /* Viền mỏng màu xám */
-    border-radius: 15px;      /* Yêu cầu: Bo góc */
-    padding: 15px;            /* Khoảng cách bên trong */
-    text-align: center;       /* Canh giữa nội dung */
-
+    width: 250px;            
+    border: 1px solid #ddd;   
+    border-radius: 15px;     
+    padding: 15px;            
+    text-align: center;       
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
     transition: transform 0.3s, box-shadow 0.3s;

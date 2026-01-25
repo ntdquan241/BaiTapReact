@@ -1,33 +1,33 @@
-// src/components/LoginForm.jsx
+
 import { useState } from 'react';
 import './LoginForm.css';
 
-// Props: onClose là hàm để tắt form khi bấm nút X
+
 function LoginForm({ onClose }) {
-  // State lưu dữ liệu người dùng nhập
+
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
-  // Hàm xử lý khi bấm nút Login
+
   const handleSubmit = (event) => {
-    event.preventDefault(); // QUAN TRỌNG: Chặn trang web tải lại (F5)
+    event.preventDefault(); 
     console.log("Đăng nhập với:", username, password);
     alert(`Xin chào ${username}!`);
-    onClose(); // Đăng nhập xong thì đóng form
+    onClose();
   };
 
   return (
     <div className="modal-overlay">
       <form className="login-form" onSubmit={handleSubmit}>
         
-        {/* Nút đóng */}
+       
         <button type="button" className="btn-close" onClick={onClose}>
           &times;
         </button>
 
         <h2 style={{ textAlign: 'center' }}>Đăng Nhập</h2>
 
-        {/* Input Username */}
+   
         <div className="form-group">
           <label>Username</label>
           <input 
@@ -39,7 +39,7 @@ function LoginForm({ onClose }) {
           />
         </div>
 
-        {/* Input Password */}
+    
         <div className="form-group">
           <label>Password</label>
           <input 
